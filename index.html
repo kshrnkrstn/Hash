@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Хеширование ГОСТ 28147-89</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Хеширование ГОСТ 28147-89</h1>
+        <label for="message">Введите сообщение:</label>
+        <textarea id="message" placeholder="Введите текст для хеширования..."></textarea>
+
+        <label for="key">Ключ шифрования:</label>
+        <input id="key" type="text" maxlength="32" placeholder="">
+        <button id="generateKeyButton">Сгенерировать ключ</button>
+
+        <button id="hashButton">Рассчитать хеш</button>
+
+        <div id="output">
+            <h3>Результат:</h3>
+            <p><strong>Хеш:</strong> <span id="hashResult"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
